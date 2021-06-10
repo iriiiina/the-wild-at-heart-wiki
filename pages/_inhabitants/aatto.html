@@ -11,12 +11,24 @@ group: inhabitants
         <p><a href="/index.html">Home</a> > <a href="/pages/inhabitants.html">Inhabitants</a> > {{ page.title }}</p>
     </div>
 
-    <h1>{{ page.title }}</h1>
+    <div class="item">
+        <h1>{{ page.title }}</h1>
 
-    {{ page.description }}
+        <div class="item-icon">
+            <img src="/assets/inhabitants/{{ page.slug }}/icon.png"/>
+        </div>
 
-    <ul>
-        <li>Age: unknown</li>
-        <li>Group: None</li>
-    </ul>
+        <div class="item-description">
+            {{ page.description }}
+        </div>
+
+        <div class="item-info">
+            <h2>Social Traits</h2>
+            <ul>
+                <li>Age: unknown</li>
+                <li>Group: None</li>
+            </ul>
+        </div>
+    </div>
+
 </main>

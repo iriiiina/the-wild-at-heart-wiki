@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Frosty Faefly"
-description: Similar to their woodland cousins in most regards, but the frost variant of the Faeflt is more accustomed to frigid temperatures and will attempt to freeze a captured Spriteling before throwing it.
+description: <p>Similar to their woodland cousins in most regards, but the frost variant of the Faeflt is more accustomed to frigid temperatures and will attempt to freeze a captured Spriteling before throwing it.</p>
 group: hostile_beasts
 ---
 
@@ -10,26 +10,37 @@ group: hostile_beasts
     <div class="navigation">
         <p><a href="/index.html">Home</a> > <a href="/pages/hostile_beasts.html">Hostile Beasts</a> > {{ page.title }}</p>
     </div>
-    
-    <h1>{{ page.title }}</h1>
 
-    <p>Similar to their woodland cousins in most regards, but the frost variant of the Faeflt is more accustomed to frigid temperatures and will attempt to freeze a captured Spriteling before throwing it.</p>
+    <div class="item">
+        <h1>{{ page.title }}</h1>
 
-    <h2>Difficulty</h2>
-    <p>4/5</p>
+        <div class="item-icon">
+            <img src="/assets/hostile_beasts/{{ page.slug }}/icon.png"/>
+        </div>
 
-    <h2>Known Habitats</h2>
-    <ul>
-        <li>Mountain</li>
-        <li>Grassland</li>
-    </ul>
+        <div class="item-description">
+            {{ page.description }}
+        </div>
 
-    <h2>Dropped Materials</h2>
-    <ul>
-        <li>Heart</li>
-        <li>Mittins</li>
-    </ul>
+        <div class="item-info">
+            <h2>Difficulty</h2>
+            <p>4/5</p>
 
-    <h2>Location</h2>
-    <p>Coming Soon</p>
+            <h2>Known Habitats</h2>
+            <ul>
+                <li>Mountain</li>
+                <li>Grassland</li>
+            </ul>
+
+            <h2>Dropped Materials</h2>
+            <ul>
+                <li>Heart</li>
+                <li>Mittins</li>
+            </ul>
+            
+            <h2>Location</h2>
+            <p>Coming Soon</p>
+        </div>
+    </div>
+
 </main>

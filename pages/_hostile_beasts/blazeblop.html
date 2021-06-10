@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Blazeblop"
-description: The Blazeblop is an incendiary Gumblop, leaving a trail of flame that dissipates over time. Difficult to attack with anything not resistant to great heat. Combine all this with an impressive movement speed and it becomes clear why most avoid this fiery beast.
+description: <p>The Blazeblop is an incendiary Gumblop, leaving a trail of flame that dissipates over time. Difficult to attack with anything not resistant to great heat. Combine all this with an impressive movement speed and it becomes clear why most avoid this fiery beast.</p>
 group: hostile_beasts
 ---
 
@@ -10,25 +10,36 @@ group: hostile_beasts
     <div class="navigation">
         <p><a href="/index.html">Home</a> > <a href="/pages/hostile_beasts.html">Hostile Beasts</a> > {{ page.title }}</p>
     </div>
-    
-    <h1>{{ page.title }}</h1>
 
-    <p>The Blazeblop is an incendiary Gumblop, leaving a trail of flame that dissipates over time. Difficult to attack with anything not resistant to great heat. Combine all this with an impressive movement speed and it becomes clear why most avoid this fiery beast.</p>
+    <div class="item">
+        <h1>{{ page.title }}</h1>
 
-    <h2>Difficulty</h2>
-    <p>3/5</p>
+        <div class="item-icon">
+            <img src="/assets/hostile_beasts/{{ page.slug }}/icon.png"/>
+        </div>
 
-    <h2>Known Habitats</h2>
-    <ul>
-        <li>Grassland</li>
-    </ul>
+        <div class="item-description">
+            {{ page.description }}
+        </div>
 
-    <h2>Dropped Materials</h2>
-    <ul>
-        <li>Heart</li>
-        <li>Fire</li>
-    </ul>
+        <div class="item-info">
+            <h2>Difficulty</h2>
+            <p>3/5</p>
 
-    <h2>Location</h2>
-    <p>Coming Soon</p>
+            <h2>Known Habitats</h2>
+            <ul>
+                <li>Grassland</li>
+            </ul>
+
+            <h2>Dropped Materials</h2>
+            <ul>
+                <li>Heart</li>
+                <li>Fire</li>
+            </ul>
+            
+            <h2>Location</h2>
+            <p>Coming Soon</p>
+        </div>
+    </div>
+
 </main>

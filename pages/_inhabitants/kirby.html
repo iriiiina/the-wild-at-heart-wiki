@@ -10,13 +10,25 @@ group: inhabitants
     <div class="navigation">
         <p><a href="/index.html">Home</a> > <a href="/pages/inhabitants.html">Inhabitants</a> > {{ page.title }}</p>
     </div>
-    
-    <h1>{{ page.title }}</h1>
 
-    {{ page.description }}
+    <div class="item">
+        <h1>{{ page.title }}</h1>
 
-    <ul>
-        <li>Age: 10</li>
-        <li>Group: Human</li>
-    </ul>
+        <div class="item-icon">
+            <img src="/assets/inhabitants/{{ page.slug }}/icon.png"/>
+        </div>
+
+        <div class="item-description">
+            {{ page.description }}
+        </div>
+
+        <div class="item-info">
+            <h2>Social Traits</h2>
+            <ul>
+                <li>Age: 10</li>
+                <li>Group: Human</li>
+            </ul>
+        </div>
+    </div>
+
 </main>
