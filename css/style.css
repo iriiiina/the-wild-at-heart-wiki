@@ -53,7 +53,7 @@ main {
         "title title"
         "icon description"
         "info description"
-        "content content";
+        "screenshots screenshots";
     align-content: stretch;
     justify-items: stretch;
     padding: 20px;
@@ -78,6 +78,10 @@ main {
 
 .item-info {
     grid-area: info;
+}
+
+.item-screenshots {
+    grid-area: screenshots;
 }
 
 footer {
