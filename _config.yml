@@ -1,0 +1,95 @@
+title: The Wild At Heart Wiki
+email: irina.ivanova@protonmail.com
+description: >-
+  Wiki of the game The Wild At Heart.
+baseurl: ""
+url: ""
+github_username: iriiiina
+
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-feed
+
+# Other
+safe: true
+timezone: "Europe/Tallinn"
+encoding: utf-8
+
+collections_dir: pages
+collections:
+  inhabitants:
+    title: "Inhabitants"
+    output: true
+    order:
+      - wake.html
+      - kirby.html
+      - grey_coat.html
+      - brussel.html
+      - scrap_heap.html
+      - crows_nest.html
+      - litterbox.html
+      - paper_planes.html
+      - toothpicks.html
+      - can_dance.html
+      - cant_dance.html
+      - cath.html
+      - aatto.html
+      - rubbish.html
+  spritelings:
+    title: "Spritelings"
+    output: true
+    order:
+      - twigling.html
+      - emberling.html
+      - shiverling.html
+      - barbling.html
+      - lunaling.html
+  hostile_beasts:
+    title: "Hostile Beasts"
+    output: true
+    order:
+      - gloomcap.html
+      - bloopcap.html
+      - knightcap.html
+      - buff_puff.html
+      - gumblop.html
+      - blazeblop.html
+      - bitterblop.html
+      - lotblop.html
+      - lilblop.html
+      - bushback.html
+      - spoilback.html
+      - frostback.html
+      - buffback.html
+      - lootback.html
+      - bloat_toad.html
+      - crud_croaker.html
+      - torch_throat.html
+      - woodsy_faefly.html
+      - frosty_faefly.html
+      - faefly_hive.html
+      - groggthud.html
+      - the_never.html
+  lost_journal_pages:
+    title: "Lost Journal Pages"
+    output: true
+    order:
+      - entry_1.html
+      - entry_2.html
+      - entry_3.html
+      - entry_4.html
+      - entry_5.html
+      - entry_6.html
+      - entry_7.html
+      - entry_8.html
+      - entry_9.html
+      - entry_10.html
+      - entry_11.html
+      - entry_12.html
+      - entry_13.html
+      - entry_14.html
+  key_items:
+    title: "Key Items"
+    output: true
+    

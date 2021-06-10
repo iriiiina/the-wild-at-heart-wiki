@@ -1,0 +1,14 @@
+<nav>
+
+    {% for collection in site.collections %}
+        <h3><a href="/pages/{{ collection.label }}.html">{{ collection.title }}</a></h3>
+
+        <ul>
+        {% for page in collection.docs %}
+            <li><a href="{{ page.url }}">{{ page.title }}</a></li>
+        {% endfor %}
+        </ul>
+
+    {% endfor %}
+
+</nav>

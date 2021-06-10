@@ -1,0 +1,89 @@
+html, body {
+    margin: 0;
+    height: 100%;
+}
+
+#layout {
+    display: grid;
+    height: 100%;
+    grid-template-columns: 400px auto ;
+    grid-template-rows: auto auto 50px;
+    grid-template-areas:
+        "header header"
+        "navigation main"
+        "footer footer";
+    align-content: stretch;
+    justify-items: stretch;
+}
+
+header {
+    grid-area: header;
+}
+
+nav {
+    grid-area: navigation;
+    padding: 20px;
+}
+
+main {
+    grid-area: main;
+}
+
+.list {
+    padding: 20px;
+}
+
+.list table td {
+    vertical-align: top;
+}
+
+.list-icon img {
+    width: 300px;
+}
+
+.list-description {
+    padding-left: 20px;
+}
+
+.item {
+    display: grid;
+    grid-template-columns: 300px auto;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: 
+        "title title"
+        "icon description"
+        "info description"
+        "content content";
+    align-content: stretch;
+    justify-items: stretch;
+    padding: 20px;
+}
+
+.item h1 {
+    grid-area: title;
+}
+
+.item-icon {
+    grid-area: icon;
+}
+
+.item-icon img {
+    width: 100%;
+}
+
+.item-description {
+    grid-area: description;
+    margin-left: 20px;
+}
+
+.item-info {
+    grid-area: info;
+}
+
+footer {
+    grid-area: footer;
+}
+
+footer img {
+    width: 100%;
+}
