@@ -8,14 +8,14 @@ group: inhabitants
 <main>
 
     <div class="navigation">
-        <p><a href="/index.html">Home</a> > <a href="/pages/inhabitants.html">Inhabitants</a> > {{ page.title }}</p>
+        <p><a href="/index.html">Home</a> > <a href="/pages/{{ page.group }}.html">Inhabitants</a> > {{ page.title }}</p>
     </div>
 
     <div class="item">
         <h1>{{ page.title }}</h1>
 
         <div class="item-icon">
-            <img src="/assets/inhabitants/{{ page.slug }}/icon.png"/>
+            <img src="/assets/{{ page.group }}/{{ page.slug }}/icon.png"/>
         </div>
 
         <div class="item-description">
@@ -47,7 +47,7 @@ group: inhabitants
 
         <div class="item-screenshots">
             <h2>Screenshots</h2>
-            <p>Coming Soon</p>
+            {% include image-gallery.html %}
         </div>
     </div>
 

@@ -8,14 +8,14 @@ group: key_items
 <main>
 
     <div class="navigation">
-        <p><a href="/index.html">Home</a> > <a href="/pages/key_items.html">Key Items</a> > {{ page.title }}</p>
+        <p><a href="/index.html">Home</a> > <a href="/pages/{{ page.group }}.html">Key Items</a> > {{ page.title }}</p>
     </div>
 
     <div class="item">
         <h1>{{ page.title }}</h1>
 
         <div class="item-icon-small">
-            <img src="/assets/key_items/{{ page.slug }}/icon.png"/>
+            <img src="/assets/{{ page.group }}/{{ page.slug }}/icon.png"/>
         </div>
 
         <div class="item-description">
@@ -31,7 +31,7 @@ group: key_items
 
         <div class="item-screenshots">
             <h2>Screenshots</h2>
-            <p>Coming Soon</p>
+            {% include image-gallery.html %}
         </div>
     </div>
 
