@@ -50,33 +50,16 @@ main {
 }
 
 .item {
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-template-rows: auto auto auto;
-    grid-template-areas: 
-        "title title"
-        "icon description"
-        "info description"
-        "screenshots screenshots";
-    align-content: stretch;
-    justify-items: stretch;
     padding: 20px;
 }
 
-.item h1 {
-    grid-area: title;
-}
-
 .item-icon {
-    grid-area: icon;
+    float: left;
+    margin-right: 20px;
 }
 
 .item-icon img {
     width: 300px;
-}
-
-.item-icon-small {
-    grid-area: icon;
 }
 
 .item-icon-small img {
@@ -84,16 +67,7 @@ main {
 }
 
 .item-description {
-    grid-area: description;
     margin-left: 20px;
-}
-
-.item-info {
-    grid-area: info;
-}
-
-.item-screenshots {
-    grid-area: screenshots;
 }
 
 footer {
