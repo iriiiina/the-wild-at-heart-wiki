@@ -1,0 +1,36 @@
+---
+layout: post
+title: "Missions Given By Toothpicks"
+description: <p>When <a href="../inhabitants/toothpicks.html">Toothpicks</a> is found and returned to the <a href="../map/central_deep_woods.html">Central Deep Woods</a>, you can chat with her and she will give you some missions. If you complete them, Toothpicks gives you a reward.</p>
+group: missions
+---
+
+<main>
+
+    <div class="navigation">
+        <p><a href="/index.html">Home</a> > <a href="/pages/{{ page.group }}.html">Missions</a> > {{ page.title }}</p>
+    </div>
+
+    <div class="item">
+        <h1>{{ page.title }}</h1>
+
+        <div class="item-icon">
+            <img src="/assets/{{ page.group }}/{{ page.slug }}/icon.png"/>
+        </div>
+
+        <div class="item-description">
+            {{ page.description }}
+        </div>
+
+        <div>
+            <h2>Missions #1</h2>
+            <p>"Destroy 10 <a href="../hostile_beasts/bushback.html">Shelterhorns</a> and come back to me for a reward"</p>
+        </div>
+
+        <div class="item-screenshots">
+            <h2>Screenshots</h2>
+            {% include image-gallery.html %}
+        </div>
+    </div>
+
+</main>

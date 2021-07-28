@@ -1,0 +1,31 @@
+---
+layout: post
+title: "Pip Squash"
+description: <p>These unique plants are more than just your average flora - they are the vessels from which the seeds of young Spritelings grow. Using the pips that drop from these gourds, Spritelings can be hatched from a Spirit Well.</p><p>It seems the type of pips dropped by a squash will be largely influenced by the type of Spriteling hitting it.</p>
+group: flora
+---
+
+<main>
+
+    <div class="navigation">
+        <p><a href="/index.html">Home</a> > <a href="/pages/{{ page.group }}.html">Flora</a> > {{ page.title }}</p>
+    </div>
+
+    <div class="item">
+        <h1>{{ page.title }}</h1>
+
+        <div class="item-icon">
+            <img src="/assets/{{ page.group }}/{{ page.slug }}/icon.png"/>
+        </div>
+
+        <div class="item-description">
+            {{ page.description }}
+        </div>
+
+        <div class="item-screenshots">
+            <h2>Screenshots</h2>
+            {% include image-gallery.html %}
+        </div>
+    </div>
+
+</main>

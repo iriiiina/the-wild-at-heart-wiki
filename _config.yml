@@ -92,3 +92,12 @@ collections:
   key_items:
     title: "Key Items"
     output: true
+  map:
+    title: "Map"
+    output: true
+  flora:
+    title: "Flora"
+    output: true
+  missions:
+    title: "Missions"
+    output: true
