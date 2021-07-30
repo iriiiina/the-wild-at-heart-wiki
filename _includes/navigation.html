@@ -1,7 +1,9 @@
 <nav>
 
     {% for collection in site.collections %}
-        <h3><a href="/pages/{{ collection.label }}.html">{{ collection.title }}</a></h3>
+        {% if collection.title != nil %}
+            <h3><a href="/pages/{{ collection.label }}.html">{{ collection.title }}</a></h3>
+        {% endif %}
 
         {% if collection.label == page.group %}
             <ul>
