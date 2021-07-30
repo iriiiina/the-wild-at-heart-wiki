@@ -13,4 +13,18 @@ title: The Wild At Heart Wiki
 
 	<h2 id="contribution">Contribution</h2>
 	<p>If you have something to add or correct in this wiki, please don't hesitate to let me know: <a href="mailto:the.wild.at.heart.wiki@gmail.com">the.wild.at.heart.wiki@gmail.com</a>. Any new details, secrets, easter eggs, screenshots are welcome.</p>
+
+	<div class="categories">
+		{% for collection in site.collections %}
+        	{% if collection.title != nil %}
+				<div class="category">
+            		<h3><a href="/pages/{{ collection.label }}.html">{{ collection.title }}</a></h3>
+					<a href="/pages/{{ collection.label }}.html">
+						<img src="/assets/{{ collection.label }}/icon.png"/>
+					</a>
+				</div>
+        	{% endif %}
+    	{% endfor %}
+	</div>
+
 </main>
