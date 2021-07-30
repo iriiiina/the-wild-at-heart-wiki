@@ -74,21 +74,6 @@ collections:
   lost_journal_pages:
     title: "Lost Journal Pages"
     output: true
-    order:
-      - entry_1.html
-      - entry_2.html
-      - entry_3.html
-      - entry_4.html
-      - entry_5.html
-      - entry_6.html
-      - entry_7.html
-      - entry_8.html
-      - entry_9.html
-      - entry_10.html
-      - entry_11.html
-      - entry_12.html
-      - entry_13.html
-      - entry_14.html
   key_items:
     title: "Key Items"
     output: true
