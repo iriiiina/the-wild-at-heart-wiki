@@ -50,6 +50,7 @@ nav {
 
 main {
     grid-area: main;
+    padding-right: 100px;
 }
 
 .list {
