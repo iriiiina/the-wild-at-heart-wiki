@@ -86,3 +86,6 @@ collections:
   missions:
     title: "Missions"
     output: true
+  items:
+    title: "Items"
+    output: true

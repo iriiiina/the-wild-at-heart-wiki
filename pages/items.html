@@ -1,0 +1,37 @@
+---
+layout: post
+title: "Items"
+group: items
+---
+
+<main>
+    
+    <div class="navigation">
+        <p><a href="/index.html">Home</a> > {{ page.title }}</p>
+    </div>
+
+    <div class="list">
+        <h1>{{ page.title }}</h1>
+
+        <table>
+            {% for item in site.items %}
+                <tr>
+                    <td class="list-icon-small">
+                        <a href="{{ item.url }}">
+                            <img src="/assets/{{ page.name | remove: '.html' }}/{{ item.slug }}/icon.png" alt="{{ item.title }} Icon"/>
+                        </a>
+                    </td>
+                    <td class="list-description">
+                        <h2><a href="{{ item.url }}">{{ item.title }}</a></h2>
+
+                        <p>{{ item.description }}</p>
+
+                        <p><a href="{{ item.url }}">Read more >>></a></p>
+                    </td>
+                </tr>
+            {% endfor %}
+        </table>
+
+    </div>
+
+</main>
