@@ -89,3 +89,6 @@ collections:
   items:
     title: "Items"
     output: true
+  camp:
+    title: "Camp"
+    output: true
