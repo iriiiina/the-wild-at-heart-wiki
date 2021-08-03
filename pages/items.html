@@ -13,25 +13,21 @@ group: items
     <div class="list">
         <h1>{{ page.title }}</h1>
 
-        <table>
-            {% for item in site.items %}
-                <tr>
-                    <td class="list-icon-small">
-                        <a href="{{ item.url }}">
-                            <img src="/assets/{{ page.name | remove: '.html' }}/{{ item.slug }}/icon.png" alt="{{ item.title }} Icon"/>
-                        </a>
-                    </td>
-                    <td class="list-description">
-                        <h2><a href="{{ item.url }}">{{ item.title }}</a></h2>
+        {% for item in site.items %}
+            <h2><a href="{{ item.url }}">{{ item.title }}</a></h2>
 
-                        <p>{{ item.description }}</p>
+            <div class="list-icon-small">
+                <a href="{{ item.url }}">
+                    <img src="/assets/{{ page.name | remove: '.html' }}/{{ item.slug }}/icon.png" alt="{{ item.title }} Icon"/>
+                </a>
+            </div>
 
-                        <p><a href="{{ item.url }}">Read more >>></a></p>
-                    </td>
-                </tr>
-            {% endfor %}
-        </table>
+            <div class="list-description">
+                <p>{{ item.description }}</p>
 
+                <p class="read-more"><a href="{{ item.url }}">Read more >>></a></p>
+            </div>
+        {% endfor %}
     </div>
 
 </main>

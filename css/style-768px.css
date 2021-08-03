@@ -1,0 +1,43 @@
+#layout {
+    grid-template-columns: 400px auto ;
+    grid-template-rows: auto auto 50px;
+    grid-template-areas:
+        "header header"
+        "navigation main"
+        "footer footer";
+}
+
+main {
+    padding-right: 100px;
+}
+
+.category {
+    width: 50%;
+}
+
+.category img {
+    width: 400px;
+}
+
+.list-icon img {
+    width: 300px;
+    margin-right: 20px;
+}
+
+.list-icon-small img {
+    width: 150px;
+}
+
+.item-icon {
+    float: left;
+    margin-right: 20px;
+}
+
+.item-icon img {
+    width: 300px;
+}
+
+.item-icon-small {
+    float: left;
+    margin-right: 20px;
+}
