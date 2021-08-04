@@ -41,3 +41,7 @@ main {
     float: left;
     margin-right: 20px;
 }
+
+.image-gallery li {
+    width: 50%!important;
+}

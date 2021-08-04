@@ -51,7 +51,7 @@ header {
 }
 
 header img {
-    max-width: 100%;
+    width: 100%;
 }
 
 nav {
@@ -89,7 +89,7 @@ main {
 }
 
 .category img {
-    width: 90%;
+    max-width: 90%;
     padding: 10px;
     text-align: center;
 }
@@ -131,7 +131,7 @@ main {
 }
 
 .item-screenshot {
-    width: 500px;
+    max-width: 100%;
 }
 
 .disclaimer {
