@@ -52,6 +52,7 @@ header {
 
 header img {
     width: 100%;
+    height: auto;
 }
 
 nav {
@@ -89,7 +90,8 @@ main {
 }
 
 .category img {
-    max-width: 90%;
+    width: 90%;
+    height: auto;
     padding: 10px;
     text-align: center;
 }
@@ -100,10 +102,12 @@ main {
 
 .list-icon img {
     width: 100%;
+    height: auto;
 }
 
 .list-icon-small img {
     width: 150px;
+    height: auto;
 }
 
 .read-more {
@@ -116,6 +120,7 @@ main {
 
 .item-icon img {
     width: 100%;
+    height: auto;
 }
 
 .item-icon-small {
@@ -124,6 +129,7 @@ main {
 
 .item-icon-small img {
     width: 150px;
+    height: 150px;
 }
 
 .item-description {
@@ -131,7 +137,8 @@ main {
 }
 
 .item-screenshot {
-    max-width: 100%;
+    width: 100%;
+    height: auto;
 }
 
 .disclaimer {
@@ -147,4 +154,5 @@ footer {
 
 footer img {
     width: 100%;
+    height: auto;
 }

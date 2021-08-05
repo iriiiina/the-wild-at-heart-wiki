@@ -17,15 +17,18 @@ main {
 
 .category img {
     width: 400px;
+    height: 400px;
 }
 
 .list-icon img {
     width: 300px;
+    height: 300px;
     margin-right: 20px;
 }
 
 .list-icon-small img {
     width: 150px;
+    height: 150px;
 }
 
 .item-icon {
@@ -35,6 +38,7 @@ main {
 
 .item-icon img {
     width: 300px;
+    height: 300px;
 }
 
 .item-icon-small {
