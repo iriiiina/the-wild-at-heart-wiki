@@ -1,4 +1,12 @@
 <header>
-	<a href="/index.html"><img src="/assets/header.webp" alt="The Wild At Heart Header"/></a>
+	<a href="/index.html">
+		<picture>
+			<source media="(min-width:768px) and (max-width:1024px)" srcset="/assets/header-1024px.png">
+			<source media="(min-width:480px) and (max-width:768px)" srcset="/assets/header-768px.png">
+			<source media="(min-width:320px) and (max-width:480px)" srcset="/assets/header-480px.png">
+			<source media="(max-width:320x)" srcset="/assets/header-320px.png">
+			<img src="/assets/header.png" alt="The Wild At Heart Header">
+		</picture> 
+	</a>
 	<p class="disclaimer">Got anything to add or change? Write to <a href="mailto:the.wild.at.heart.wiki@gmail.com">the.wild.at.heart.wiki@gmail.com</a></p>
 </header>
