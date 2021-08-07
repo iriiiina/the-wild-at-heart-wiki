@@ -1,0 +1,38 @@
+---
+layout: post
+title: "Crackle Candy"
+description: <p>Poppy Chunks! A puzzling candy that crackles in your mouth. Unfortunately it looks way too old to eat, but could be useful in earning a few Scrap.</p>
+group: items
+---
+
+<main>
+
+    <div class="navigation">
+        <p><a href="/index.html">Home</a> > <a href="/pages/{{ page.group }}.html">Items</a> > {{ page.title }}</p>
+    </div>
+
+    <div class="item">
+        <h1>{{ page.title }}</h1>
+
+        <div class="item-icon-small">
+            <img src="/assets/{{ page.group }}/{{ page.slug }}/icon.png" alt="{{ page.title }} Icon"/>
+        </div>
+
+        <div class="item-description">
+
+            {{ page.description }}
+        
+        </div>
+
+        <div>
+            <h2>How To Get The {{ page.title }}?</h2>
+            <p>Coming Soon</p>
+        </div>
+
+        <div class="item-screenshots">
+            <h2>Screenshots</h2>
+            {% include image-gallery.html %}
+        </div>
+    </div>
+
+</main>
