@@ -148,6 +148,33 @@ main {
     margin-right: 30px;
 }
 
+.recipe {
+    display: grid;
+    grid-template-columns: 200px auto 200px;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+        "title title title"
+        "icon description ingredients";
+    column-gap: 10px;
+    row-gap: 10px;
+}
+
+.recipe-title {
+    grid-area: title;
+}
+
+.recipe-icon {
+    grid-area: icon;
+}
+
+.recipe-description {
+    grid-area: description;
+}
+
+.recipe-ingredients {
+    grid-area: ingredients;
+}
+
 footer {
     grid-area: footer;
 }

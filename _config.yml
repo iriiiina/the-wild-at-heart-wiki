@@ -92,3 +92,6 @@ collections:
   camp:
     title: "Camp"
     output: true
+  recipes:
+    title: "Recipes"
+    output: true

@@ -1,0 +1,38 @@
+---
+layout: post
+title: "Emberling Pip"
+description: <p>Contains the spark of life for a <a href="../spritelings/emberling.html">Emberling</a>. Infuse with Glint at the nearest <a href="../camp/spirit_well.html">Spirit Well</a> to hatch into a <a href="/pages/spritelings.html">Spriteling</a>.</p>
+group: items
+---
+
+<main>
+
+    <div class="navigation">
+        <p><a href="/index.html">Home</a> > <a href="/pages/{{ page.group }}.html">Items</a> > {{ page.title }}</p>
+    </div>
+
+    <div class="item">
+        <h1>{{ page.title }}</h1>
+
+        <div class="item-icon-small">
+            <img src="/assets/{{ page.group }}/{{ page.slug }}/icon.png" alt="{{ page.title }} Icon"/>
+        </div>
+
+        <div class="item-description">
+
+            {{ page.description }}
+        
+        </div>
+
+        <div>
+            <h2>How To Get The {{ page.title }}?</h2>
+            <p>Coming Soon</p>
+        </div>
+
+        <div class="item-screenshots">
+            <h2>Screenshots</h2>
+            {% include image-gallery.html %}
+        </div>
+    </div>
+
+</main>
