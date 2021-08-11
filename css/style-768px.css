@@ -49,3 +49,26 @@ main {
 .image-gallery li {
     width: 500px!important;
 }
+
+.recipe {
+    grid-template-columns: 200px auto;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+        "title title"
+        "icon description"
+        "icon ingredients";
+    column-gap: 10px;
+    row-gap: 10px;
+}
+
+.recipe-title {
+    text-align: left;
+}
+
+.recipe-icon {
+    text-align: left;
+}
+
+.recipe-ingredients img {
+    width: 500px;
+}

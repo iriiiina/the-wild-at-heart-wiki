@@ -7,6 +7,11 @@ html, body {
     color: white;
 }
 
+main {
+    padding: 0px;
+    margin: 0px;
+}
+
 h1, h2, h3 {
     font-family: 'Amatic SC', cursive;
     font-weight: normal;
@@ -34,6 +39,7 @@ a {
 
 #layout {
     display: grid;
+    width: 100%;
     height: 100%;
     grid-template-columns: auto;
     grid-template-rows: auto;
@@ -150,22 +156,24 @@ main {
 
 .recipe {
     display: grid;
-    grid-template-columns: 200px auto;
-    grid-template-rows: auto auto auto;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto;
     grid-template-areas:
-        "title title"
-        "icon description"
-        "icon ingredients";
-    column-gap: 10px;
-    row-gap: 10px;
+        "title"
+        "icon"
+        "description"
+        "ingredients";
+    margin-bottom: 20px;
 }
 
 .recipe-title {
     grid-area: title;
+    text-align: center;
 }
 
 .recipe-icon {
     grid-area: icon;
+    text-align: center;
 }
 
 .recipe-description {
@@ -178,7 +186,7 @@ main {
 }
 
 .recipe-ingredients img {
-    width: 500px;
+    width: 90%;
 }
 
 footer {
