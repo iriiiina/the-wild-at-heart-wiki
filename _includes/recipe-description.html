@@ -1,0 +1,27 @@
+
+<p>You can craft {{ page.title }} on the <a href="../camp/workbench.html">Workbench</a> in any camp putting together following ingredients:</p>
+<p style="text-align: center;">
+    <a href="../items/{{ page.recipe_ingredient_1 }}.html">
+        {% for name in site.items %}
+            {% if name.slug == page.recipe_ingredient_1 %}
+                {{ name.title }}
+            {% endif %}
+        {% endfor %}
+    </a> + 
+    <a href="../items/{{ page.recipe_ingredient_2 }}.html">
+        {% for name in site.items %}
+            {% if name.slug == page.recipe_ingredient_2 %}
+                {{ name.title }}
+            {% endif %}
+        {% endfor %}
+    </a> +
+    <a href="../items/{{ page.recipe_ingredient_3 }}.html">
+        {% for name in site.items %}
+            {% if name.slug == page.recipe_ingredient_3 %}
+                {{ name.title }}
+            {% endif %}
+        {% endfor %}
+    </a></p>
+<p style="text-align: center;"><img src="../assets/items/{{ page.slug }}/recipe.png" alt=""/></p>
+<p>See one of the screenshots for details.</p>
+<p>See <a href="/pages/recipes.html">other Recipes</a> for crafting new cool items!</p>
