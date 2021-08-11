@@ -150,11 +150,12 @@ main {
 
 .recipe {
     display: grid;
-    grid-template-columns: 200px auto 400px;
-    grid-template-rows: auto auto;
+    grid-template-columns: 200px auto;
+    grid-template-rows: auto auto auto;
     grid-template-areas:
-        "title title title"
-        "icon description ingredients";
+        "title title"
+        "icon description"
+        "icon ingredients";
     column-gap: 10px;
     row-gap: 10px;
 }
@@ -173,6 +174,11 @@ main {
 
 .recipe-ingredients {
     grid-area: ingredients;
+    text-align: center;
+}
+
+.recipe-ingredients img {
+    width: 500px;
 }
 
 footer {
