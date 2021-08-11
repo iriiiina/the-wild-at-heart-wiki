@@ -15,28 +15,51 @@ title: "Recipes"
 
     <div class="recipes">
 
-        <div class="recipe">
-            <div class="recipe-title">
-                <a href="../items/sturdy_tonic.html">Sturdy Tonic</a>
-            </div>
-            <div class="recipe-icon">
-                <a href="../items/sturdy_tonic.html">
-                    <img src="/assets/items/sturdy_tonic/icon.png"/>
-                </a>
-            </div>
-            <div class="recipe-description">
-                Applies extra strength to <a href="/pages/spritelings.html">Spritelings</a> in the splash zone, giving them invulnerability for a time.
-            </div>
-            <div class="recipe-ingredients">
-                <ul>
-                    <li><a href="../items/beastie_bits.html">Beastie Bits</a></li>
-                    <li><a href="../items/empty_bottle.html">Empty Bottle</a></li>
-                    <li><a href="../items/burly_burr.html">Burry Burr</a></li>
-                </ul>
-            </div>
-        </div>
-
-
+        {% for item in site.items %}
+            {% if item.recipe == true %}
+                <div class="recipe">
+                    <div class="recipe-title">
+                        <a href="{{ item.url }}">{{ item.title }}</a>
+                    </div>
+                    <div class="recipe-icon">
+                        <a href="{{ item.url }}">
+                            <img src="/assets/items/{{ item.slug }}/icon.png"/>
+                        </a>
+                    </div>
+                    <div class="recipe-description">
+                        {{ item.description }}
+                    </div>
+                    <div class="recipe-ingredients">
+                        <ul>
+                            <li><a href="../items/{{ item.recipe_ingredient_1 }}.html">
+                                {% for name in site.items %}
+                                    {% if name.slug == item.recipe_ingredient_1 %}
+                                        <img src="/assets/items/{{ name.slug }}/icon.png"/>
+                                        {{ name.title }}
+                                    {% endif %}
+                                {% endfor %}
+                            </a></li>
+                            <li><a href="../items/{{ item.recipe_ingredient_2 }}.html">
+                                {% for name in site.items %}
+                                    {% if name.slug == item.recipe_ingredient_2 %}
+                                        <img src="/assets/items/{{ name.slug }}/icon.png"/>
+                                        {{ name.title }}
+                                    {% endif %}
+                                {% endfor %}
+                            </a></li>
+                            <li><a href="../items/{{ item.recipe_ingredient_3 }}.html">
+                                {% for name in site.items %}
+                                    {% if name.slug == item.recipe_ingredient_3 %}
+                                       <img src="/assets/items/{{ name.slug }}/icon.png"/>
+                                        {{ name.title }}
+                                    {% endif %}
+                                {% endfor %}
+                            </a></li>
+                        </ul>
+                    </div>
+                </div>
+            {% endif %}
+        {% endfor %}
 
     </div>
 

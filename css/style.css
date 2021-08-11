@@ -150,7 +150,7 @@ main {
 
 .recipe {
     display: grid;
-    grid-template-columns: 200px auto 200px;
+    grid-template-columns: 200px auto 400px;
     grid-template-rows: auto auto;
     grid-template-areas:
         "title title title"
